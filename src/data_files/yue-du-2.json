@@ -1,4 +1,4 @@
-{
+[{
     "bookSourceComment": "笔趣阁",
     "bookSourceGroup": "web",
     "bookSourceName": "(笔趣阁)https://www.xbiqugew.com",
@@ -31,4 +31,4 @@
     },
     "searchUrl": "/modules/article/search.php?searchkey={{key}}",
     "weight": 0
-}
+}]
