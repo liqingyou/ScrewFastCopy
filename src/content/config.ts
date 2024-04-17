@@ -58,7 +58,12 @@ const blogCollection = defineCollection({
   schema: ({ image }) => z.object ({
   title: z.string(),
   description: z.string(),
-  contents: z.array(z.string()),
+  contents: z.array(z.object({
+    type: z.string(),
+    text: z.string(),
+    href: z.string().optional(),
+    // 添加其他内容属性
+  })),
   author: z.string(),
   role: z.string().optional(),
   authorImage: image(),
@@ -66,6 +71,7 @@ const blogCollection = defineCollection({
   pubDate: z.date(),
   cardImage: image(),
   cardImageAlt: z.string(),
+  cardImageUrl: z.string().default("https://img.2loveyou.com/img/qqq-1555481880693-12.jpg"),
   readTime: z.number(),
   tags: z.array(z.string()).optional(),
   }),
