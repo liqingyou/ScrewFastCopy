@@ -1,0 +1,34 @@
+{
+    "bookSourceComment": "笔趣阁",
+    "bookSourceGroup": "web",
+    "bookSourceName": "(笔趣阁)https://www.xbiqugew.com",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.xbiqugew.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledExplore": false,
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"\n}",
+    "lastUpdateTime": 0,
+    "ruleBookInfo": {},
+    "ruleContent": {
+        "content": "//*[@id=\"content\"]"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+        "author": "//*[@id=\"info\"]/p[1]/a/text()",
+        "bookList": "//*[@id=\"maininfo\"]",
+        "bookUrl": "/book/{$._id}/",
+        "coverUrl": "//*[@id=\"fmimg\"]/img/@href",
+        "intro": "//*[@id=\"intro\"]/text()",
+        "kind": "",
+        "lastChapter": "//*[@id=\"info\"]/p[4]/a/text()",
+        "name": "//*[@id=\"info\"]/h1"
+    },
+    "ruleToc": {
+        "chapterList": "//*[@id=\"list\"]/dl/dd",
+        "chapterName": "text",
+        "chapterUrl": "href"
+    },
+    "searchUrl": "/modules/article/search.php?searchkey={{key}}",
+    "weight": 0
+}

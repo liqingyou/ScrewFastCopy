@@ -108,7 +108,7 @@ export default defineConfig({
       ],
     }),
     compressor({
-      gzip: false,
+      gzip: true,
       brotli: true,
     }),
   ],
