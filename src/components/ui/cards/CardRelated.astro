@@ -19,10 +19,11 @@ interface Props {
   <div>
     <Image
       class="aspect-video rounded-xl"
-      src={blogEntry.data.cardImage}
+      src={blogEntry.data.cardImageUrl}
       alt={blogEntry.data.cardImageAlt}
       draggable={"false"}
       format={"avif"}
+      inferSize={true}
     />
     <!-- The title of the blog post -->
     <h3

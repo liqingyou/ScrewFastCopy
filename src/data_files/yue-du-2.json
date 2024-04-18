@@ -27,7 +27,7 @@
     "ruleToc": {
         "chapterList": "//*[@id=\"list\"]/dl/dd",
         "chapterName": "text",
-        "chapterUrl": "href"
+        "chapterUrl": "[href]"
     },
     "searchUrl": "/modules/article/search.php?searchkey={{key}}",
     "weight": 0
