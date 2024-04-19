@@ -109,6 +109,10 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
                     {content.text}
                   </a>
                 );
+              case "video":
+                return (
+                  <video controls="true" width="100%" height="auto" muted><source src={content.text} type="video/mp4"/></video>
+                );
               default:
                 return null;
             }
