@@ -1,0 +1,27 @@
+---
+title: "muisc ffmpeg mp3"
+description: "muisc ffmpeg mp"
+author: "Admin"
+authorImage: "@/images/blog/anna.avif"
+authorImageAlt: "Avatar Description"
+pubDate: 2024-04-19
+cardImage: "@/images/blog/post-3.avif"
+cardImageAlt: "Side view worker wearing gloves"
+cardImageUrl : "https://img.2loveyou.com/img/a-A-1678245807733-1708484525301.jpg"
+readTime: 2
+tags: ["Unclassified"]
+contents: []
+---
+
+查看mp3的信息
+```
+ ffprobe -v error -show_entries stream=codec_type,codec_name,sample_rate,bit_rate -of default=noprint_wrappers=1 .\tears-on-the-dancefloor-stocktune.mp3
+```
+
+可能值
+```
+codec_name=mp3
+codec_type=audio
+sample_rate=48000
+bit_rate=128000
+```
